@@ -1,30 +1,32 @@
 -->Kütüphane Yönetim Sistemi
+
 Python ile geliştirilmiş modern bir kütüphane yönetim sistemi. Bu proje Global AI Hub Python 202 Bootcamp kapsamında geliştirilmiştir ve OOP, API entegrasyonu ve FastAPI kullanımını birleştirir.
 
-Özellikler
+^^ Özellikler
 Nesne Yönelimli Programlama (OOP) ile modüler yapı
 Farklı kitap türleri desteği:
-📖 Fiziksel Kitaplar
-💻 E-Kitaplar (EPUB formatı)
-🎧 Sesli Kitaplar (süre bilgisi ile)
+-Fiziksel Kitaplar
+-E-Kitaplar (EPUB formatı)
+-Sesli Kitaplar (süre bilgisi ile)
 Open Library API entegrasyonu ile otomatik kitap bilgisi çekme
 FastAPI ile modern RESTful API
 JSON tabanlı veri saklama
 Otomatik API dokümantasyonu (Swagger UI)
-📋 Gereksinimler
+***Gereksinimler
 Python 3.8+
 İnternet bağlantısı (Open Library API için)
-🛠️ Kurulum
+🛠Kurulum
 Projeyi klonlayın:
 git clone https://github.com/vassimdr/kutuphane-yonetim-sistemi.git
 cd kutuphane-yonetim-sistemi
 Gerekli paketleri yükleyin:
 pip install -r requirements.txt
-🎯 Kullanım
+-->Kullanım
 1. Konsol Uygulaması
 Basit menü tabanlı terminal uygulaması:
 
 python main.py
+
 Menü seçenekleri:
 
 Kitap Ekle (ISBN ile otomatik bilgi çekme)
@@ -32,18 +34,17 @@ Kitap Sil
 Kitapları Listele
 Kitap Ara
 Çıkış
+
 2. Web API Servisi
 Modern REST API servisi:
-
 uvicorn api:app --reload
 API Endpoints:
-
 GET /books - Tüm kitapları listele
 POST /books - Yeni kitap ekle
 DELETE /books/{isbn} - Kitap sil
 API Dokümantasyonu: http://localhost:8000/docs
 
-🔗 API Kullanımı
+***API Kullanımı
 Kitap Ekleme
 curl -X POST "http://localhost:8000/books" \
      -H "Content-Type: application/json" \
@@ -67,7 +68,7 @@ Sesli Kitap Ekleme
   "book_type": "audiobook",
   "duration": 540
 }
-🏗️ Proje Yapısı
+--> Proje Yapısı
 kutuphane-yonetim-sistemi/
 ├── api.py              # FastAPI web servisi
 ├── book.py             # Book sınıfları (Book, EBook, AudioBook)
@@ -76,7 +77,7 @@ kutuphane-yonetim-sistemi/
 ├── requirements.txt    # Python bağımlılıkları
 ├── library.json        # Kitap veritabanı (otomatik oluşur)
 └── README.md          # Bu dosya
-🧪 Örnek Kullanım
+Örnek Kullanım
 Web Arayüzü ile Test
 API'yi başlatın: uvicorn api:app --reload
 Tarayıcıda açın: http://localhost:8000/docs
@@ -116,13 +117,13 @@ class EBook(Book):
 
 class AudioBook(Book):
     - duration: int
-📝 API Referansı
+API Referansı
 Method	Endpoint	Açıklama
 GET	/books	Tüm kitapları listele
 POST	/books	Yeni kitap ekle
 DELETE	/books/{isbn}	Kitap sil
 GET	/docs	API dokümantasyonu
-🎓 Eğitim Hedefleri
+**->Eğitim Hedefleri
 Bu proje aşağıdaki konuları kapsamaktadır:
 
 OOP Prensipleri: Encapsulation, Inheritance, Polymorphism
