@@ -17,7 +17,7 @@ Python 3.8+
 İnternet bağlantısı (Open Library API için)
 🛠Kurulum
 Projeyi klonlayın:
-git clone https://github.com/vassimdr/kutuphane-yonetim-sistemi.git
+git clone https://github.com/SevvalEsenturk/Library-Akbank
 cd kutuphane-yonetim-sistemi
 Gerekli paketleri yükleyin:
 pip install -r requirements.txt
